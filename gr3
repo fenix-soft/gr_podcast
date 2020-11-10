@@ -1,0 +1,72 @@
+#!/bin/bash
+#
+#
+####################################################################################
+# script che recupera l'ultimo podcast del  gr3  
+#
+#v:1.0  Novembre 2020                                                             
+#
+# dipendenze: curl,jq,cat,wget,ffmpeg
+#
+#
+####################################################################################
+
+# set global variable
+
+gr3api="https://www.raiplayradio.it/programmi/gr3/?json"
+grbase="https://www.raiplayradio.it"
+ag="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/56.0"
+
+
+# remove old jason data
+rm ./data/gr3.json
+rm ./data/Lgr3.json
+
+
+# get  jason data
+curl -A "$ag"  "$gr3api" -o data/gr3.json
+echo " "
+echo "get data api... done!"
+echo " "
+
+
+# extract jason data of the last podcast
+
+dataL=`cat ./data/gr3.json | jq -r ."pathFirstItem"`
+
+echo " "
+echo log: $dataL
+echo " "
+
+curl -A "$ag" "$grbase$dataL" -o data/Lgr3.json
+
+Lpodcast=`cat ./data/Lgr3.json | jq -r '.["audio"] | .contentUrl'`
+
+echo " "
+echo log: $Lpodcast
+echo " "
+
+
+# extract time and date  onair podcast 
+
+ora=`cat ./data/Lgr3.json | jq -r ."timePublished"`
+Ora=`echo $ora | sed -e 's/\ /\n/g' | grep ":"| sed -e 's/\:/\_/g'`
+
+data=`cat ./data/Lgr3.json | jq -r ."datePublished"`
+Data=`echo $data | sed -e 's/\//\-/g'`
+
+echo " "
+echo log: $Data $Ora
+echo " "
+echo " "
+
+
+# download podcast
+
+wget -d -c -U "$ag" "$Lpodcast" -O gr3_"$Data"_"$Ora".mp3
+
+# encode audio data... small file
+
+#ffmpeg -i gr3_"$Data"_"$Ora".mp3 -vn -acodec aac -ab 80k gr3_"$Data"_"$Ora".m4a
+ffmpeg -i gr3_"$Data"_"$Ora".mp3 -acodec libopus -b:a 64k gr3_"$Data"_"$Ora".opus
+rm gr3_"$Data"_"$Ora".mp3

@@ -1,0 +1,139 @@
+
+    
+    {
+        "author": "",
+        "channel": "Rai Radio 2",
+        "editor": "",
+        "bsp": "rplr_aod_radio2",
+        "adv": true,
+        "datePublished":"09/11/2020",
+      "timePublished":"10:30",
+        "parentPage": "Page-89c03ef0-229b-4cbb-89f3-e3ce357be518",
+        "parentBlock": "PublishingBlock-ed08f07d-b6fc-49f3-921d-54f0914d866b",
+        "parentSet": "ContentSet-d733cab3-a77c-4d7b-9783-f74af627282d",
+        "stagione": "",
+        "episodio": "",
+        "generi": [],
+        "sottogeneri": [],
+        "correlati": "",
+        "caption": "",
+        "description": " ",
+        "isPartOf":{
+        
+
+        
+        "tipologia" : [],
+          
+    "channel":"Rai Radio 2",
+  				
+    "editor" : "",
+    "social" : {
+    "sms" : "",
+      "telefono" : "",
+      "whatsapp" : "",
+      "email" : ""
+    },
+    "orario" : "",
+    "generi" :[],
+      "correlati" : "",
+    "sottogenere" : [],
+    "subtitle" : " - ",
+    "anno" : "",
+    "regia" : "",
+        "produzione" : "",
+       "country" : "",
+            
+			"durataFirstItem" : "",
+		
+    "interpreti" : "",
+    "conduttore" : "",
+        "numeroStagioni" : "",
+        "description" : "",
+        "label":"",
+
+        
+    "ID" : "ContentItem-f9347e13-7150-43ce-b91a-089f890f6d03",
+    
+        "name" : "GR 2",
+      
+    "weblink" : "/programmi/gr2",
+    "PathID" : "/programmi/gr2/index.html?json",
+    "az" : true,
+    "images": {
+          "landscape" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/12/19/1513691549801_gr2-ok169.png",
+              "portrait" : "",
+              "square" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/12/19/1513691544594_gr2-ok.png",
+                "landscape43" : "",
+                "portrait43" : "",
+                "portrait_logo" : "",
+                "landscape_logo" : ""
+        },
+        
+        "rights-management" : {
+          "Diritti" : {
+            "diretta":{
+            },
+            "offline":{
+            },
+            "VOD":{
+            },"Zona Geografica":{
+            }
+          }
+        }
+        ,
+
+
+        "sito": "",
+        "bsp" : "rplr_aod_radio2",
+        "fmt" : "",
+        "keyw" : "",
+        "banner300x250" : "",
+        "bannerUnicoLoc": "",
+        
+		"dfp" : {
+		 	"label" : ""
+		 	
+		 		,"name_escaped" : "GR2"
+		 	
+		 },
+	 
+        "adv": true,
+        "type" : ""
+      
+        },
+        "audio": {
+        
+        "contentUrl": "http://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=AbDedb2DEr78hCquMXDh5weeqqEEqualeeqqEEqual",
+        "duration": "",
+        "highlights": "",
+        "subtitles": ""
+        },
+        "images": {
+        "landscape" : "",
+        "portrait": "",
+        "square": "",
+        "landscape43": "",
+        "portrait43": ""
+        },
+        "ID": "ContentItem-5bedfea7-3ad2-406b-af96-75f4b40ed09f",
+        "PathID": "/audio/2020/10/GR-2-5bedfea7-3ad2-406b-af96-75f4b40ed09f.html?json",
+        "name": "GR 2",
+        "subtitle": "",
+        
+        "availabilities":[{"start":"2020-11-09 10:30:00","end":"2020-11-16 23:59:59"}]
+        ,"regia": "",
+        "interpreti": "",
+        "type": "RaiTv Media Audio Item",
+        "weblink": "/audio/2020/10/GR-2-5bedfea7-3ad2-406b-af96-75f4b40ed09f.html",
+        "rating": "0",
+		"scaricabile": "",
+        "rights-management": {
+        "Diritti": {
+        "diretta": {},
+        "offline": {},
+        "VOD": {},
+        "Zona Geografica": {}
+        }
+        }
+        }
+    

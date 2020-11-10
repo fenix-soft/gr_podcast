@@ -1,0 +1,312 @@
+
+        {
+        "Name" : "GR 1",
+        "ID" : "Page-7713084b-738a-4594-9cef-2c13f8de81cf",
+        "pathID" : "/programmi/gr1/index.html?json",
+        "channel" : "Rai Radio 1",
+        
+			"pathFirstItem" : "/audio/2020/10/GR1-ore-13-del-09112020-544316aa-ecfc-45b0-82fa-4c3e36be4430.html?json",
+		
+			"durataFirstItem" : "",
+		
+        "infoProg": {
+            "categoriaProgramma": {
+                "id": "Category-95f615b5-52d8-4116-ae5d-de68f08d3b55",
+                "nome": "GR 1"
+            }
+            
+                ,
+                
+
+        
+        "tipologia" : [
+              {"nome": "Programma Radio",
+              "id" : "Category-27fea946-557f-4ee3-8a30-2a390e731de9"}],
+          
+    "channel":"Rai Radio 1",
+  				
+    "editor" : "",
+    "social" : {
+    "sms" : "",
+      "telefono" : "",
+      "whatsapp" : "",
+      "email" : ""
+    },
+    "orario" : "",
+    "generi" :[
+      {"nome" : "Informazione",
+      "id" : "Category-b85c5541-2371-4690-8586-55c17f5d85af"}
+    ],
+      "correlati" : "Category:Programma%20Radio:Category-27fea946-557f-4ee3-8a30-2a390e731de9^Category:Informazione:Category-b85c5541-2371-4690-8586-55c17f5d85af^",
+    "sottogenere" : [],
+    "subtitle" : "",
+    "anno" : "",
+    "regia" : "",
+        "produzione" : "",
+       "country" : "",
+            
+			"durataFirstItem" : "",
+		
+    "interpreti" : "",
+    "conduttore" : "",
+        "numeroStagioni" : "",
+        "description" : "25 edizioni al giorno 24 ore su 24. Aggiornamenti continui, fili diretti sull'attualit\u00E0 e breaking news. Per essere sempre informati.",
+        "label":"",
+
+        
+    "ID" : "ContentItem-49393892-fb23-4999-8fb7-640bf1a55250",
+    
+        "name" : "GR 1",
+      
+    "weblink" : "/programmi/gr1",
+    "PathID" : "/programmi/gr1/index.html?json",
+    "az" : true,
+    "images": {
+          "landscape" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2018/09/18/1537271328652_Gr1_2048x1152.jpg",
+              "portrait" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_1152x2048.jpg",
+              "square" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/12/19/1513679074202_Gr1.jpg_2048.jpg",
+                "landscape43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_2048x1536.jpg",
+                "portrait43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_1536x2048.jpg",
+                "portrait_logo" : "",
+                "landscape_logo" : ""
+        },
+        
+        "rights-management" : {
+          "Diritti" : {
+            "diretta":{
+            },
+            "offline":{
+            },
+            "VOD":{
+            },"Zona Geografica":{
+            }
+          }
+        }
+        ,
+
+
+        "sito": "",
+        "bsp" : "rplr_aod_radio1",
+        "fmt" : "",
+        "keyw" : "",
+        "banner300x250" : "",
+        "bannerUnicoLoc": "",
+        
+		"dfp" : {
+		 	"label" : ""
+		 	
+		 		,"name_escaped" : "GR1"
+		 	
+		 		,"generi_escaped" : [
+		      {"nome" : "Informazione",
+		      "id" : "Category-b85c5541-2371-4690-8586-55c17f5d85af"}
+		    ]
+		 	
+		 		,"tipologia_escaped" : [
+		        {"nome": "ProgrammaRadio",
+		        "id" : "Category-27fea946-557f-4ee3-8a30-2a390e731de9"}]
+		 	
+		 },
+	 
+        "adv": true,
+        "type" : "Programma Radio"
+      
+        },
+        "Blocks": [
+            {
+            "Name" : "Puntate e Podcast",
+            "ID" : "PublishingBlock-cc06a6b9-fc0c-468b-8010-72480ea8b8df",
+            "type" : "PLR puntate Block",
+            "template" : "list",
+                
+                    "Sets":[{
+        "Name" : "Novembre 2020",
+        "ID" : "ContentSet-5182a05b-58f0-4dc2-b8d8-f84dfd1e4a41",
+        "url" : "/programmi/gr1/puntate/ContentSet-5182a05b-58f0-4dc2-b8d8-f84dfd1e4a41.html?json"
+        }
+    ]
+                    
+	        }
+        	,{
+            "Name" : "GR 1",
+            "ID" : "PublishingBlock-fbe55df2-6055-46d4-abf5-e0515a9134b4",
+            "type" : "Rai Radio Testata Programma Block",
+            "template" : "list",
+                
+                    "Sets":[]
+                    
+	        }
+        	,{
+            "Name" : "Clip",
+            "ID" : "PublishingBlock-da015d9c-ad14-4a1c-97b6-7fc5c088f10f",
+            "type" : "Rai Radio Archivio Audio Block",
+            "template" : "list",
+                
+                    "Sets":[{
+        "Name" : "Clip",
+        "ID" : "ContentSet-4020084f-7f9f-4d2d-81ac-5ec81395a4f2",
+        "url" : "/programmi/gr1/puntate/ContentSet-4020084f-7f9f-4d2d-81ac-5ec81395a4f2.html?json"
+        }
+    ]
+                    
+	        }
+        	,{
+            "Name" : "Raccolte",
+            "ID" : "PublishingBlock-18c87f31-7363-4083-86ca-b751221d885b",
+            "type" : "Rai Radio Playlist Block",
+            "template" : "list",
+                
+                        "lanci" : [
+		{
+		"name" : "GR 1 - Sergio Zavoli",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-34ebd85d-1e3b-4733-9011-4547a8605b32",
+		"pathID" : "/playlist/ContentSet-b3ba2cab-1428-44c4-bf22-316c91a97b61.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"A 96 anni \u00E8 morto Sergio Zavoli, maestro del giornalismo italiano. Radiocronista, condirettore del telegiornale, direttore del Gr, presidente della Rai, \u00E8 stato autore di inchieste che hanno fatto la storia. Il ricordo di Radio 1",
+		"subtitle": "A 96 anni \u00E8 morto Sergio Zavoli, maestro del giornalismo italiano. Radiocronista, condirettore del telegiornale, direttore del Gr, presidente della Rai, \u00E8 stato autore di inchieste che hanno fatto la storia. Il ricordo di Radio 1",
+		"channel": "Rai Radio 1",
+		"title": "GR 1 - Sergio Zavoli",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2020/08/06/1596721372592_gr%201%20-%20sergio%20zavoli%202048x2048.png",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		,
+		{
+		"name" : "GR 1 - Xylella",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-a35046ed-8c8c-4a67-8340-17f4526c28b8",
+		"pathID" : "/playlist/ContentSet-c2fba081-4d1a-4207-af02-517c97f2003b.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"",
+		"subtitle": "Il viaggio del GR 1 nelle zone del Salento colpite dal batterio della Xylella fastidiosa. Di Simone Zazzera",
+		"channel": "Rai Radio 1",
+		"title": "GR 1 - Xylella",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2019/10/22/1571741371814_gr%201%20raccolta%20-%20xylella%202048x2048.jpg",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		,
+		{
+		"name" : "GR 1 - Incidenti sul lavoro",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-04269a53-2669-46bb-a006-9eb556799efd",
+		"pathID" : "/playlist/ContentSet-d6322747-5164-423e-89a0-9d12556fd0cd.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"",
+		"subtitle": "La raccolta delle testimonianze del GR 1. Di Fulvio Migliaccio",
+		"channel": "Rai Radio 1",
+		"title": "GR 1 - Incidenti sul lavoro",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2019/10/03/1570110560102_gr%201%20raccolta%20-%20incidenti%20sul%20lavoro%202048x2048.jpg",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		,
+		{
+		"name" : "GR 1 - Mafia nigeriana",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-58136370-4f23-4383-968d-67cabaf05d88",
+		"pathID" : "/playlist/ContentSet-4212e09b-80c0-43f1-a7db-2cc55446cf88.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"",
+		"subtitle": "L'inchiesta del GR 1 sulla mafia nigeriana. Di simone Zazzera",
+		"channel": "Rai Radio 1",
+		"title": "GR 1 - Mafia nigeriana",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2019/08/28/1566996012126_gr%201%20-%20mafia%20nigeriana%202048x2048.jpg",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		,
+		{
+		"name" : "GR 1 - Cosa nostra all'estero",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-9266b1c5-43c8-40e6-b447-9c50bc5bdde0",
+		"pathID" : "/playlist/ContentSet-f832b4b6-1c5a-4ef9-8097-d508eae5b546.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"",
+		"subtitle": "Il viaggio di Radio 1 nell'Europa delle mafie. Di Anna Milan",
+		"channel": "Rai Radio 1",
+		"title": "GR 1 - Cosa nostra all'estero",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2019/07/10/1562764715610_gr%201%20raccolta%20cosa%20nostra%20allestero%202048x2048.jpg",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		,
+		{
+		"name" : "La 'ndrangheta in Europa",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-5fe45d6e-8906-4cf6-8624-7c3b9ad33851",
+		"pathID" : "/playlist/ContentSet-abc214e1-ca86-4955-ba85-e5058ac96faf.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"",
+		"subtitle": "Il viaggio di Radio 1 sulle tracce della 'ndrangheta in Europa.  Pi\u00F9 di 40 miliardi all'anno di fatturato, un'organizzazione criminale efficientissima e la capacit\u00E0 di muoversi sotto traccia.",
+		"channel": "Rai Radio 1",
+		"title": "La 'ndrangheta in Europa",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2019/02/11/1549890818591_gr%201%20raccolta%20ndrangheta%202048x2048.jpg",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		,
+		{
+		"name" : "Verso le Europee 2019",
+		"type" : "Rai Radio Playlist Set",
+		"ID":"ContentItem-799fa3d8-47d2-4b70-a18a-aa0501a94b15",
+		"pathID" : "/playlist/ContentSet-870ce743-2b3a-445d-b02c-1917ef18b9fc.html?json",
+        "sub-type": "Rai Radio Playlist Set",
+		"description":"",
+		"subtitle": "Come si preparano alle Elezioni del 26 maggio gli Stati dell'Unione europea.",
+		"channel": "Rai Radio 1",
+		"title": "Verso le Europee 2019",
+		"images": {
+		"landscape": "http://www.rai.it/resizegd/[RESOLUTION]/dl/img/2019/02/21/1550761197314_gr1%20raccolta%20-%20verso%20le%20europee%202019%202048x2048.jpg",
+		"portrait": "",
+		"square": "",
+		"landscape43": "",
+		"portrait43": ""
+		}
+		}
+		]
+                    
+	        }
+        	,{
+            "Name" : "GR 1 - Video",
+            "ID" : "PublishingBlock-70401504-1035-4b08-b24a-b1f8cb716e1b",
+            "type" : "Rai Radio Archivio Video Block",
+            "template" : "list",
+                
+                    "Sets":[{
+        "Name" : "Video",
+        "ID" : "ContentSet-bbfade55-87a6-49cf-b6b7-be20143d3560",
+        "url" : "/programmi/gr1/archivio/Video-bbfade55-87a6-49cf-b6b7-be20143d3560.html?json"
+        }
+    ]
+                    
+	        }
+        	
+            ]
+        }
+    

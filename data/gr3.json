@@ -1,0 +1,119 @@
+
+        {
+        "Name" : "GR 3",
+        "ID" : "Page-398e7cb2-58b2-421c-bf6b-1ef8bc9433ec",
+        "pathID" : "/programmi/gr3/index.html?json",
+        "channel" : "Rai Radio 3",
+        
+			"pathFirstItem" : "/audio/2020/10/GR-3-e6484841-3f2a-4716-864b-fac256ad0582.html?json",
+		
+			"durataFirstItem" : "",
+		
+        "infoProg": {
+            "categoriaProgramma": {
+                "id": "Category-5bae7eff-f3f0-4d72-87d8-70d6a5f544bd",
+                "nome": "GR 3"
+            }
+            
+                ,
+                
+
+        
+        "tipologia" : [],
+          
+    "channel":"Rai Radio 3",
+  				
+    "editor" : "",
+    "social" : {
+    "sms" : "",
+      "telefono" : "",
+      "whatsapp" : "",
+      "email" : ""
+    },
+    "orario" : "",
+    "generi" :[],
+      "correlati" : "",
+    "sottogenere" : [],
+    "subtitle" : " - ",
+    "anno" : "",
+    "regia" : "",
+        "produzione" : "",
+       "country" : "",
+            
+			"durataFirstItem" : "",
+		
+    "interpreti" : "",
+    "conduttore" : "",
+        "numeroStagioni" : "",
+        "description" : "A cura della redazione del Giornale Radio Rai",
+        "label":"",
+
+        
+    "ID" : "ContentItem-0e20c0f7-d820-40f1-a489-2785557ffad2",
+    
+        "name" : "GR 3",
+      
+    "weblink" : "/programmi/gr3",
+    "PathID" : "/programmi/gr3/index.html?json",
+    "az" : true,
+    "images": {
+          "landscape" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_2048x1152.jpg",
+              "portrait" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_1152x2048.jpg",
+              "square" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_2048x2048.jpg",
+                "landscape43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_2048x1536.jpg",
+                "portrait43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_1536x2048.jpg",
+                "portrait_logo" : "",
+                "landscape_logo" : ""
+        },
+        
+        "rights-management" : {
+          "Diritti" : {
+            "diretta":{
+            },
+            "offline":{
+            },
+            "VOD":{
+            },"Zona Geografica":{
+            }
+          }
+        }
+        ,
+
+
+        "sito": "",
+        "bsp" : "rplr_aod_radio3",
+        "fmt" : "",
+        "keyw" : "",
+        "banner300x250" : "",
+        "bannerUnicoLoc": "",
+        
+		"dfp" : {
+		 	"label" : ""
+		 	
+		 		,"name_escaped" : "GR3"
+		 	
+		 },
+	 
+        "adv": true,
+        "type" : ""
+      
+        },
+        "Blocks": [
+            {
+            "Name" : "Puntate e Podcast",
+            "ID" : "PublishingBlock-ec905abe-d63e-4e89-a350-52b437670a39",
+            "type" : "PLR puntate Block",
+            "template" : "list",
+                
+                    "Sets":[{
+        "Name" : "GR 3 - Edizioni",
+        "ID" : "ContentSet-2a84533c-0abd-4ec4-8e8b-78d484fe1888",
+        "url" : "/programmi/gr3/puntate/ContentSet-2a84533c-0abd-4ec4-8e8b-78d484fe1888.html?json"
+        }
+    ]
+                    
+	        }
+        	
+            ]
+        }
+    

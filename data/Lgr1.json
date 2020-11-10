@@ -1,0 +1,153 @@
+
+    
+    {
+        "author": "",
+        "channel": "Rai Radio 1",
+        "editor": "",
+        "bsp": "rplr_aod_radio1",
+        "adv": true,
+        "datePublished":"09/11/2020",
+      "timePublished":"13:00",
+        "parentPage": "Page-7713084b-738a-4594-9cef-2c13f8de81cf",
+        "parentBlock": "PublishingBlock-cc06a6b9-fc0c-468b-8010-72480ea8b8df",
+        "parentSet": "ContentSet-5182a05b-58f0-4dc2-b8d8-f84dfd1e4a41",
+        "stagione": "",
+        "episodio": "",
+        "generi": [],
+        "sottogeneri": [],
+        "correlati": "",
+        "caption": "",
+        "description": " ",
+        "isPartOf":{
+        
+
+        
+        "tipologia" : [
+              {"nome": "Programma Radio",
+              "id" : "Category-27fea946-557f-4ee3-8a30-2a390e731de9"}],
+          
+    "channel":"Rai Radio 1",
+  				
+    "editor" : "",
+    "social" : {
+    "sms" : "",
+      "telefono" : "",
+      "whatsapp" : "",
+      "email" : ""
+    },
+    "orario" : "",
+    "generi" :[
+      {"nome" : "Informazione",
+      "id" : "Category-b85c5541-2371-4690-8586-55c17f5d85af"}
+    ],
+      "correlati" : "Category:Programma%20Radio:Category-27fea946-557f-4ee3-8a30-2a390e731de9^Category:Informazione:Category-b85c5541-2371-4690-8586-55c17f5d85af^",
+    "sottogenere" : [],
+    "subtitle" : "",
+    "anno" : "",
+    "regia" : "",
+        "produzione" : "",
+       "country" : "",
+            
+			"durataFirstItem" : "",
+		
+    "interpreti" : "",
+    "conduttore" : "",
+        "numeroStagioni" : "",
+        "description" : "25 edizioni al giorno 24 ore su 24. Aggiornamenti continui, fili diretti sull'attualit\u00E0 e breaking news. Per essere sempre informati.",
+        "label":"",
+
+        
+    "ID" : "ContentItem-49393892-fb23-4999-8fb7-640bf1a55250",
+    
+        "name" : "GR 1",
+      
+    "weblink" : "/programmi/gr1",
+    "PathID" : "/programmi/gr1/index.html?json",
+    "az" : true,
+    "images": {
+          "landscape" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2018/09/18/1537271328652_Gr1_2048x1152.jpg",
+              "portrait" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_1152x2048.jpg",
+              "square" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/12/19/1513679074202_Gr1.jpg_2048.jpg",
+                "landscape43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_2048x1536.jpg",
+                "portrait43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_1536x2048.jpg",
+                "portrait_logo" : "",
+                "landscape_logo" : ""
+        },
+        
+        "rights-management" : {
+          "Diritti" : {
+            "diretta":{
+            },
+            "offline":{
+            },
+            "VOD":{
+            },"Zona Geografica":{
+            }
+          }
+        }
+        ,
+
+
+        "sito": "",
+        "bsp" : "rplr_aod_radio1",
+        "fmt" : "",
+        "keyw" : "",
+        "banner300x250" : "",
+        "bannerUnicoLoc": "",
+        
+		"dfp" : {
+		 	"label" : ""
+		 	
+		 		,"name_escaped" : "GR1"
+		 	
+		 		,"generi_escaped" : [
+		      {"nome" : "Informazione",
+		      "id" : "Category-b85c5541-2371-4690-8586-55c17f5d85af"}
+		    ]
+		 	
+		 		,"tipologia_escaped" : [
+		        {"nome": "ProgrammaRadio",
+		        "id" : "Category-27fea946-557f-4ee3-8a30-2a390e731de9"}]
+		 	
+		 },
+	 
+        "adv": true,
+        "type" : "Programma Radio"
+      
+        },
+        "audio": {
+        
+        "contentUrl": "http://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=CxIwFcssSlash0nYjzSmspPpPlussUMxtjweeqqEEqualeeqqEEqual",
+        "duration": "",
+        "highlights": "",
+        "subtitles": ""
+        },
+        "images": {
+        "landscape" : "",
+        "portrait": "",
+        "square": "",
+        "landscape43": "",
+        "portrait43": ""
+        },
+        "ID": "ContentItem-544316aa-ecfc-45b0-82fa-4c3e36be4430",
+        "PathID": "/audio/2020/10/GR1-ore-13-del-09112020-544316aa-ecfc-45b0-82fa-4c3e36be4430.html?json",
+        "name": "GR1 ore 13 del 09/11/2020",
+        "subtitle": "",
+        
+        "availabilities":[{"start":"2020-11-09 13:00:00","end":"3000-01-01 23:29:59"}]
+        ,"regia": "",
+        "interpreti": "",
+        "type": "RaiTv Media Audio Item",
+        "weblink": "/audio/2020/10/GR1-ore-13-del-09112020-544316aa-ecfc-45b0-82fa-4c3e36be4430.html",
+        "rating": "0",
+		"scaricabile": "false",
+        "rights-management": {
+        "Diritti": {
+        "diretta": {},
+        "offline": {},
+        "VOD": {},
+        "Zona Geografica": {}
+        }
+        }
+        }
+    

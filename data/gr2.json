@@ -1,0 +1,119 @@
+
+        {
+        "Name" : "GR 2",
+        "ID" : "Page-89c03ef0-229b-4cbb-89f3-e3ce357be518",
+        "pathID" : "/programmi/gr2/index.html?json",
+        "channel" : "Rai Radio 2",
+        
+			"pathFirstItem" : "/audio/2020/10/GR-2-5bedfea7-3ad2-406b-af96-75f4b40ed09f.html?json",
+		
+			"durataFirstItem" : "",
+		
+        "infoProg": {
+            "categoriaProgramma": {
+                "id": "Category-e1120ba0-b6c7-4fd1-9a42-8b6e42cd2495",
+                "nome": "GR 2"
+            }
+            
+                ,
+                
+
+        
+        "tipologia" : [],
+          
+    "channel":"Rai Radio 2",
+  				
+    "editor" : "",
+    "social" : {
+    "sms" : "",
+      "telefono" : "",
+      "whatsapp" : "",
+      "email" : ""
+    },
+    "orario" : "",
+    "generi" :[],
+      "correlati" : "",
+    "sottogenere" : [],
+    "subtitle" : " - ",
+    "anno" : "",
+    "regia" : "",
+        "produzione" : "",
+       "country" : "",
+            
+			"durataFirstItem" : "",
+		
+    "interpreti" : "",
+    "conduttore" : "",
+        "numeroStagioni" : "",
+        "description" : "",
+        "label":"",
+
+        
+    "ID" : "ContentItem-f9347e13-7150-43ce-b91a-089f890f6d03",
+    
+        "name" : "GR 2",
+      
+    "weblink" : "/programmi/gr2",
+    "PathID" : "/programmi/gr2/index.html?json",
+    "az" : true,
+    "images": {
+          "landscape" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/12/19/1513691549801_gr2-ok169.png",
+              "portrait" : "",
+              "square" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/12/19/1513691544594_gr2-ok.png",
+                "landscape43" : "",
+                "portrait43" : "",
+                "portrait_logo" : "",
+                "landscape_logo" : ""
+        },
+        
+        "rights-management" : {
+          "Diritti" : {
+            "diretta":{
+            },
+            "offline":{
+            },
+            "VOD":{
+            },"Zona Geografica":{
+            }
+          }
+        }
+        ,
+
+
+        "sito": "",
+        "bsp" : "rplr_aod_radio2",
+        "fmt" : "",
+        "keyw" : "",
+        "banner300x250" : "",
+        "bannerUnicoLoc": "",
+        
+		"dfp" : {
+		 	"label" : ""
+		 	
+		 		,"name_escaped" : "GR2"
+		 	
+		 },
+	 
+        "adv": true,
+        "type" : ""
+      
+        },
+        "Blocks": [
+            {
+            "Name" : "Puntate e Podcast",
+            "ID" : "PublishingBlock-ed08f07d-b6fc-49f3-921d-54f0914d866b",
+            "type" : "PLR puntate Block",
+            "template" : "list",
+                
+                    "Sets":[{
+        "Name" : "GR 2 - Edizioni",
+        "ID" : "ContentSet-d733cab3-a77c-4d7b-9783-f74af627282d",
+        "url" : "/programmi/gr2/puntate/ContentSet-d733cab3-a77c-4d7b-9783-f74af627282d.html?json"
+        }
+    ]
+                    
+	        }
+        	
+            ]
+        }
+    

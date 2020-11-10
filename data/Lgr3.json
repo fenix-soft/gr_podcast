@@ -1,0 +1,139 @@
+
+    
+    {
+        "author": "",
+        "channel": "Rai Radio 3",
+        "editor": "",
+        "bsp": "rplr_aod_radio3",
+        "adv": true,
+        "datePublished":"09/11/2020",
+      "timePublished":"13:45",
+        "parentPage": "Page-398e7cb2-58b2-421c-bf6b-1ef8bc9433ec",
+        "parentBlock": "PublishingBlock-ec905abe-d63e-4e89-a350-52b437670a39",
+        "parentSet": "ContentSet-2a84533c-0abd-4ec4-8e8b-78d484fe1888",
+        "stagione": "",
+        "episodio": "",
+        "generi": [],
+        "sottogeneri": [],
+        "correlati": "",
+        "caption": "",
+        "description": " ",
+        "isPartOf":{
+        
+
+        
+        "tipologia" : [],
+          
+    "channel":"Rai Radio 3",
+  				
+    "editor" : "",
+    "social" : {
+    "sms" : "",
+      "telefono" : "",
+      "whatsapp" : "",
+      "email" : ""
+    },
+    "orario" : "",
+    "generi" :[],
+      "correlati" : "",
+    "sottogenere" : [],
+    "subtitle" : " - ",
+    "anno" : "",
+    "regia" : "",
+        "produzione" : "",
+       "country" : "",
+            
+			"durataFirstItem" : "",
+		
+    "interpreti" : "",
+    "conduttore" : "",
+        "numeroStagioni" : "",
+        "description" : "A cura della redazione del Giornale Radio Rai",
+        "label":"",
+
+        
+    "ID" : "ContentItem-0e20c0f7-d820-40f1-a489-2785557ffad2",
+    
+        "name" : "GR 3",
+      
+    "weblink" : "/programmi/gr3",
+    "PathID" : "/programmi/gr3/index.html?json",
+    "az" : true,
+    "images": {
+          "landscape" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_2048x1152.jpg",
+              "portrait" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_1152x2048.jpg",
+              "square" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741137_GR_2048x2048.jpg",
+                "landscape43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_2048x1536.jpg",
+                "portrait43" : "https://www.raiplayradio.it/resizegd/[RESOLUTION]/dl/img/2017/10/26/1509000741138_GR_1536x2048.jpg",
+                "portrait_logo" : "",
+                "landscape_logo" : ""
+        },
+        
+        "rights-management" : {
+          "Diritti" : {
+            "diretta":{
+            },
+            "offline":{
+            },
+            "VOD":{
+            },"Zona Geografica":{
+            }
+          }
+        }
+        ,
+
+
+        "sito": "",
+        "bsp" : "rplr_aod_radio3",
+        "fmt" : "",
+        "keyw" : "",
+        "banner300x250" : "",
+        "bannerUnicoLoc": "",
+        
+		"dfp" : {
+		 	"label" : ""
+		 	
+		 		,"name_escaped" : "GR3"
+		 	
+		 },
+	 
+        "adv": true,
+        "type" : ""
+      
+        },
+        "audio": {
+        
+        "contentUrl": "http://mediapolisvod.rai.it/relinker/relinkerServlet.htm?cont=ExTBbiyJGpPpPlusst8dmj0Pd6sjAeeqqEEqualeeqqEEqual",
+        "duration": "",
+        "highlights": "",
+        "subtitles": ""
+        },
+        "images": {
+        "landscape" : "",
+        "portrait": "",
+        "square": "",
+        "landscape43": "",
+        "portrait43": ""
+        },
+        "ID": "ContentItem-e6484841-3f2a-4716-864b-fac256ad0582",
+        "PathID": "/audio/2020/10/GR-3-e6484841-3f2a-4716-864b-fac256ad0582.html?json",
+        "name": "GR 3",
+        "subtitle": "",
+        
+        "availabilities":[{"start":"2020-11-09 13:45:00","end":"2020-11-16 23:59:59"}]
+        ,"regia": "",
+        "interpreti": "",
+        "type": "RaiTv Media Audio Item",
+        "weblink": "/audio/2020/10/GR-3-e6484841-3f2a-4716-864b-fac256ad0582.html",
+        "rating": "0",
+		"scaricabile": "",
+        "rights-management": {
+        "Diritti": {
+        "diretta": {},
+        "offline": {},
+        "VOD": {},
+        "Zona Geografica": {}
+        }
+        }
+        }
+    
