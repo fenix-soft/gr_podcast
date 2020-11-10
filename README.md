@@ -32,7 +32,7 @@ scaricare  l'ultimo podcast del gr1, esegui
 
 se vuoi invece integrare lo script nel sistema, per poterlo lanciare in qualisiasi posizione il terminale si trovi,  modifica il tuo file **.bashrc** e aggiungi un percorso per lo script  directory personalizzato.
 
-####esempio modifica integrazione di file .bashrc
+#### esempio modifica integrazione di file .bashrc
 
     export PATH = $ PATH: "path  directory script"
 
