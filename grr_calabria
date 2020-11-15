@@ -1,0 +1,55 @@
+#!/bin/bash
+#
+#
+####################################################################################
+# script che recupera i podcast del radio giornale della Calabria   
+#
+# v:1.0                                                                    
+#
+# dipendenze: curl,jq,cat,wget
+#
+#
+####################################################################################
+
+
+# set global variable
+
+grrAPI="https://www.rainews.it/dl/rai24/tgr/basic/archivio/ContentSet-6f71b78c-7628-4584-962b-385521737a0d.json"
+
+ag="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/56.0"
+
+# remove old jason data
+rm ./data/Calabria.json
+
+# get  jason data
+curl -A "$ag"  "$grrAPI" -o data/Calabria.json
+echo " "
+echo "get data api... done!"
+echo " "
+
+# extract jason data of the 2 last  podcast stored
+data0=`cat ./data/Calabria.json | jq -r '.items[0]|.date'`
+Media0=`cat ./data/Calabria.json | jq -r '.items[0]|.mediaUrl'`
+ora0=`cat ./data/Calabria.json | jq -r '.items[0]|.title'`
+
+data1=`cat ./data/Calabria.json | jq -r '.items[1]|.date'`
+Media1=`cat ./data/Calabria.json | jq -r '.items[1]|.mediaUrl'`
+ora1=`cat ./data/Calabria.json | jq -r '.items[1]|.title'`
+
+# extract time onair podcast "h_m"
+Ora0=`echo $ora0 | sed -e 's/\ /\n/g' | grep ":"| sed -e 's/\:/\_/g'`
+
+Ora1=`echo $ora1 | sed -e 's/\ /\n/g' | grep ":"| sed -e 's/\:/\_/g'`
+
+# extract date onair podcast "type 10-10-2020"
+Data0=`echo $data0  | sed -e 's/\//\-/g'`
+Data1=`echo $data1  | sed -e 's/\//\-/g'`
+
+echo " "
+echo "extract data... done!"
+echo " "
+
+# download podcast
+
+wget -d -c -U "$ag" "$Media0" -O GRR_Calabria_"$Data0"_"$Ora0".mp3
+wget -d -c -U "$ag" "$Media1" -O GRR_Calabria_"$Data1"_"$Ora1".mp3
