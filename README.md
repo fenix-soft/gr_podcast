@@ -9,7 +9,7 @@
 
 La raccolta prevede al momento, gli script per il:  **gr1**, **gr2**, **gr3**,  del giornale radio nazionale
 
-La raccolta attualmente prevede, gli scripr del *grr regionale*: **Lazio**, **Lombardia**
+La raccolta attualmente prevede, gli scripr del *grr regionale*: **Lazio**, **Lombardia**, **Abruzzo**, **Basilicata**, **Calabria**, **Campania**, **Piemonte**
 
 
 ## dipendenze:
