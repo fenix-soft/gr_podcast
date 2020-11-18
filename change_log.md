@@ -1,3 +1,8 @@
+# V1.4
+
+- add script grr: Emilia Romamagna, Friuli-VG, Liguria, 
+
+
 # V1.3
 
 - add script grr: Abruzzo, Basilicata, Calabria, Campania, Piemonte
