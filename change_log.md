@@ -1,3 +1,6 @@
+# V1.6
+- add script grr: Puglia, Sardegna, Sicilia, Toscana, Trentino
+
 # V1.5
 - add script grr: Marche, Molise, Veneto
 
