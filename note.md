@@ -19,11 +19,11 @@ Gli script sono nati principalmente per i seguenti motivi:
 
 i podcast  del gr 1,2,3 sono  mp3 stereo con campionamento a 48KhZ e bitrate a 256KBps (alta qualità, file grandi) mediamente per il gr1 dai 20 minuti in su, siamo intorno ai 45 MB o superiore come peso per singolo file...
 
- Ricodificandoli in opus ho file che pesano 12MB circa, qualità audio invariata, su rete mobile quando li sincronizo, risparmio 4 volte la banda dati che normalmente dovrei usare, e non è poco.
+ Ricodificandoli in opus ho file che pesano 12MB circa, qualità audio invariata, su rete mobile quando li sincronizzo, risparmio 4 volte la banda dati che normalmente dovrei usare, e non è poco.
 
 Per chi volesse nello script è possibile codificare in aac  basta commentare o deccommentare le ultime righe del codice.
 
 Si può disabilitare del tutto la codifica commentando con # le righe da 70 a 72
 
-Negli script del GRR regionale il bit rate in mp3 varia da 96 a 128 kbps quindi i file sono relativamente piccoli e negli script non è prevista la ricodifica in opus o aac.
+Negli script del GRR regionale il bit rate in mp3 varia da 96 a 128 kbps quindi i file sono relativamente piccoli e negli script per ora, non è prevista la ricodifica in opus o aac dei file.
 

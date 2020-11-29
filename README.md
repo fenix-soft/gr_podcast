@@ -7,9 +7,9 @@
 
 
 
-La raccolta prevede al momento, gli script per il:  **gr1**, **gr2**, **gr3**,  del giornale radio nazionale
+La raccolta comprende gli script per il:  **gr1**, **gr2**, **gr3**,  del giornale radio nazionale
 
-La raccolta attualmente prevede, gli scripr del *grr regionale*: **Lazio**, **Lombardia**, **Abruzzo**, **Basilicata**, **Calabria**, **Campania**, **Piemonte**
+La raccolta  comprende anche  gli scripr del **grr regionale.**
 
 
 ## dipendenze:
@@ -52,7 +52,9 @@ buon ascolto!
 
 **gr_podcast** is a collection of bash scripts that allows the user to easily retrieve the latest episodes included in the podcast of the radio newspaper rai '**gr**' .. and if necessary, once downloaded, recode them in **opus** or "**aac**" format (audio codec) to save storage space, see [note.md](note.md) 
 
-The collection currently includes scripts for: gr1, gr2, gr3
+The collection currently includes scripts for: **gr1, gr2, gr3**
+
+The collection also includes the scripr of the regional ** grr. **
 
 ### dependency script:
 

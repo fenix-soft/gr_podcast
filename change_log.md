@@ -1,3 +1,7 @@
+# V1.7
+- add script grr: Umbria, Valle d'Aosta
+- add italian map "regioni_italia.png" in data directory for future use.
+
 # V1.6
 - add script grr: Puglia, Sardegna, Sicilia, Toscana, Trentino
 
