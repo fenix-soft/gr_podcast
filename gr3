@@ -2,29 +2,30 @@
 #
 #
 ####################################################################################
-# script che recupera l'ultimo podcast del  gr3  
+# script che recupera l'ultimo podcast del  gr3 
 #
-#v:1.0  Novembre 2020                                                             
+#V:2.0  alpha_debug_mode  18 DICEMBRE 2021                                                        
 #
-# dipendenze: curl,jq,cat,wget,ffmpeg
+# dipendenze: curl,jq,cat,wget
 #
-#
+# log: cambio api rai e dominio
 ####################################################################################
 
 # set global variable
 
-gr3api="https://www.raiplayradio.it/programmi/gr3/?json"
-grbase="https://www.raiplayradio.it"
+gr3api="https://www.raiplaysound.it/programmi/gr3.json"
+grbase="https://www.raiplaysound.it"
 ag="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/56.0"
 
 
 # remove old jason data
 rm ./data/gr3.json
-rm ./data/Lgr3.json
+#rm ./data/Lgr3.json
 
 
 # get  jason data
 curl -A "$ag"  "$gr3api" -o data/gr3.json
+echo " "
 echo " "
 echo "get data api... done!"
 echo " "
@@ -32,37 +33,40 @@ echo " "
 
 # extract jason data of the last podcast
 
-dataL=`cat ./data/gr3.json | jq -r ."pathFirstItem"`
+dataT=`cat ./data/gr3.json | jq -r '."block" | ."cards" | .[0] | ."downloadable_audio" | ."title"'`
 
 echo " "
-echo log: $dataL
+echo "extract data... find.."
+echo " "
+echo " "
+echo podcast_title: $dataT
 echo " "
 
-curl -A "$ag" "$grbase$dataL" -o data/Lgr3.json
 
-Lpodcast=`cat ./data/Lgr3.json | jq -r '.["audio"] | .contentUrl'`
+
+Lpodcast=`cat ./data/gr3.json | jq -r '."block" | ."cards" | .[0] | ."downloadable_audio" | ."url"'`
 
 echo " "
-echo log: $Lpodcast
+echo podcast_url: $Lpodcast
 echo " "
 
 
 # extract time and date  onair podcast 
 
-ora=`cat ./data/Lgr3.json | jq -r ."timePublished"`
+ora=`cat ./data/gr3.json | jq -r '."block" | ."cards" | .[0] | ."create_time"'`
 Ora=`echo $ora | sed -e 's/\ /\n/g' | grep ":"| sed -e 's/\:/\_/g'`
 
-data=`cat ./data/Lgr3.json | jq -r ."datePublished"`
+data=`cat ./data/gr3.json | jq -r '."block" | ."cards" | .[0] | ."create_date"'`
 Data=`echo $data | sed -e 's/\//\-/g'`
 
 echo " "
-echo log: $Data $Ora
+echo log_podcast_creation: $Data $Ora
 echo " "
 echo " "
-
 
 # download podcast
-
+echo " download podcast.. opus_encode.."
+echo " "
 wget -d -c -U "$ag" "$Lpodcast" -O gr3_"$Data"_"$Ora".mp3
 
 # encode audio data... small file
