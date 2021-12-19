@@ -1,3 +1,7 @@
+# V2.0 alpha debug-mode
+- fix script for use new api rai
+- fix script for use new rai url, rewrite some code gr1,gr2,gr3
+
 # V1.7
 - add script grr: Umbria, Valle d'Aosta
 - add italian map "regioni_italia.png" in data directory for future use.
