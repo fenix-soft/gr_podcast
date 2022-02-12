@@ -2,9 +2,9 @@
 #
 #
 ####################################################################################
-# script che recupera i podcast del radio giornale della Sardegna   
+# script che recupera i podcast del radio giornale sardo   
 #
-# v:1.0                                                                    
+# v:2.0   alpha              12 Gennaio 2022                                                   
 #
 # dipendenze: curl,jq,cat,wget
 #
@@ -19,22 +19,22 @@ grrAPI="https://www.rainews.it/dl/rai24/tgr/basic/archivio/ContentSet-49e9a5dc-a
 ag="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/56.0"
 
 # remove old jason data
-rm ./data/Sardegna.json
+rm ./data/data.json
 
 # get  jason data
-curl -A "$ag"  "$grrAPI" -o data/Sardegna.json
+curl -A "$ag"  "$grrAPI" -o data/data.json
 echo " "
 echo "get data api... done!"
 echo " "
 
 # extract jason data of the 2 last  podcast stored
-data0=`cat ./data/Sardegna.json | jq -r '.items[0]|.date'`
-Media0=`cat ./data/Sardegna.json | jq -r '.items[0]|.mediaUrl'`
-ora0=`cat ./data/Sardegna.json | jq -r '.items[0]|.title'`
+data0=`cat ./data/data.json | jq -r '.items[0]|.date'`
+Media0=`cat ./data/data.json | jq -r '.items[0]|.mediaUrl'`
+ora0=`cat ./data/data.json | jq -r '.items[0]|.title'`
 
-data1=`cat ./data/Sardegna.json | jq -r '.items[1]|.date'`
-Media1=`cat ./data/Sardegna.json | jq -r '.items[1]|.mediaUrl'`
-ora1=`cat ./data/Sardegna.json | jq -r '.items[1]|.title'`
+data1=`cat ./data/data.json | jq -r '.items[1]|.date'`
+Media1=`cat ./data/data.json | jq -r '.items[1]|.mediaUrl'`
+ora1=`cat ./data/data.json | jq -r '.items[1]|.title'`
 
 # extract time onair podcast "h_m"
 Ora0=`echo $ora0 | sed -e 's/\ /\n/g' | grep ":"| sed -e 's/\:/\_/g'`
@@ -49,7 +49,34 @@ echo " "
 echo "extract data... done!"
 echo " "
 
+# patch 404 relinker old api legacy
+
+echo " "
+echo "patch 404 relinker... debug mode.."
+echo " "
+
+echo $Media0
+echo $Media1
+
+Media_0=`echo $Media0  | sed -e 's/http/https/g'`
+Media_1=`echo $Media1  | sed -e 's/http/https/g'`
+echo " "
+echo "apply patch 404.. to https relinker..debug "
+echo " "
+echo "link_fix: "$Media_0
+echo "link_fix: "$Media_1
+
+
 # download podcast
 
-wget -d -c -U "$ag" "$Media0" -O GRR_Sardegna_"$Data0"_"$Ora0".mp3
-wget -d -c -U "$ag" "$Media1" -O GRR_Sardegna_"$Data1"_"$Ora1".mp3
+wget -d -c -U "$ag" "$Media_0" -O GRR_"$Data0"_"$Ora0".mp3
+wget -d -c -U "$ag" "$Media_1" -O GRR_"$Data1"_"$Ora1".mp3
+
+# encode audio data... small file
+
+#ffmpeg -i GRR_"$Data"_"$Ora".mp3 -vn -acodec aac -ab 80k GRR_"$Data"_"$Ora".m4a
+
+ffmpeg -n -i GRR_"$Data0"_"$Ora0".mp3 -acodec libopus -b:a 56k -ac 1 GRR_"$Data0"_"$Ora0".opus
+ffmpeg -n -i GRR_"$Data1"_"$Ora1".mp3 -acodec libopus -b:a 56k -ac 1 GRR_"$Data1"_"$Ora1".opus
+rm GRR_"$Data0"_"$Ora0".mp3
+rm GRR_"$Data1"_"$Ora1".mp3
