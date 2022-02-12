@@ -114,3 +114,7 @@ Costruire un phaser in bash per recuperare il jason dall'html e riformattarlo no
 NB: alcune funzioni dell' api legacy continuano a funzionare.. (fino a quando?) la parte essenziale dei relinker da errore 404. 
 
 Quindi momentaneamente gli script regionali sono momentaneamente in sospeso di manutenzione, finchè non trovo qualcosa di fattibile.
+
+### 12 Febbraio 2022
+
+fix sperimentale errore 404 dell' api legacy, in fase di test nello script grr sardegna, in caso di stabilità, esporto a tempo debito ad altre grr regionali
