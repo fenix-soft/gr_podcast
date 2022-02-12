@@ -1,5 +1,9 @@
+# V2.1 alpha debug-mode
+- add new script "raipodcast-dl" 
+- fix alpha sperimental new grr sardegna script
+
 # V2.0 alpha debug-mode
-- fix script for use new api rai
+- fix script for use new api rai 2021/12/21
 - fix script for use new rai url, rewrite some code gr1,gr2,gr3
 
 # V1.7
