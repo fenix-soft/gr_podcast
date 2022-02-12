@@ -1,0 +1,99 @@
+#!/bin/bash
+#
+#
+####################################################################################
+# script che recupera il podcast dei singoli episodi da raiplaisound "link diretto del singolo ep." 
+#
+# V:1.5  alpha_debug_mode  23 Gennaio 2022                                                      
+#
+# dipendenze: curl,jq,cat,wget
+#
+# uso: raipodcast-dl [link pagina html episodio]
+####################################################################################
+
+# set global variable
+
+surce=$1
+
+grbase="https://www.raiplaysound.it"
+ag="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/56.0"
+
+
+# remove old jason data
+rm ./data/surce.json
+#rm ./data/Lsurce.json
+
+
+# get  jason data
+
+jsurce=`echo $surce | sed -e 's/html/json/g'`
+echo "jsurce: " $jsurce
+echo " "
+curl -A "$ag"  "$jsurce" -o data/surce.json
+echo " "
+echo " "
+echo "get data api... done!"
+echo " "
+
+# function download data.
+function DLnow { 
+# download podcast
+echo " download podcast.. rencode.."
+echo " "
+wget -d -c -U "$ag" "$Lpodcast" -O $dataT.mp3
+
+}
+
+
+# extract jason data of the last podcast
+
+datat=`cat ./data/surce.json | jq -r '."downloadable_audio" | ."title"'`
+dataT=`echo $datat | sed -e 's/\//\-/g' | sed -e 's/\ /\_/g'`
+echo " "
+echo "extract data... find.."
+echo " "
+echo " "
+echo podcast_title: $dataT
+echo " "
+
+
+
+Lpodcast=`cat ./data/surce.json | jq -r '."downloadable_audio" | ."url"'`
+
+echo " "
+echo podcast_url: $Lpodcast
+echo " "
+
+DLnow
+
+# encode audio data... small file
+
+
+ffmpeg -n -i $dataT.mp3 -vn -acodec libvorbis -aq 3 -ac 1 $dataT.ogg
+
+
+rm $dataT.mp3
+
+
+# ceck if json data is legacy.. workaround  fix for audio_book..legacy
+
+if [ "$Lpodcast" = "null" ]; then
+
+datat=`cat ./data/surce.json | jq -r '."audio" | ."title"'`
+dataT=`echo $datat | sed -e 's/\//\-/g' | sed -e 's/\ /\_/g'`
+echo " "
+echo "extract data... find.."
+echo " "
+echo " "
+echo podcast_title_Legacy: $dataT
+echo " "
+Lpodcast=`cat ./data/surce.json | jq -r '."audio" | ."url"'`
+echo " "
+echo podcast_url: $Lpodcast
+echo " "
+DLnow
+fi
+
+
+
+
