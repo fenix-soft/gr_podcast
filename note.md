@@ -56,7 +56,7 @@ per chi volesse risparmiare ancora più banda di sincronizzazione e avere file a
 
 ```
 
-ffmpeg -n -i grX_"$Data"_"$Ora".mp3 -vn -acodec libopus -ab 48k -ac 1 grX_"$Data"_"$Ora".ogg
+ffmpeg -n -i grX_"$Data"_"$Ora".mp3 -vn -acodec libopus -ab 48k -ac 1 grX_"$Data"_"$Ora".opus
 
 ```
 
