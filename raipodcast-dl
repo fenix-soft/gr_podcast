@@ -69,6 +69,7 @@ DLnow
 # encode audio data... small file
 
 
+# ffmpeg -n -i $dataT.mp3 -vn -acodec libopus -ab 48k -ac 1 $dataT.ogg
 ffmpeg -n -i $dataT.mp3 -vn -acodec libvorbis -aq 3 -ac 1 $dataT.ogg
 
 
