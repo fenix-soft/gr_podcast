@@ -1,3 +1,6 @@
+# V2.1.1 alpha debug-mode
+- change encoder setting in gr1,2,3 script (now small file but increse encoder time) [see note.md](note.md)
+
 # V2.1 alpha debug-mode
 - add new script "raipodcast-dl" 
 - fix alpha sperimental new grr sardegna script
