@@ -4,7 +4,7 @@
 ####################################################################################
 # script che recupera l'ultimo podcast del  gr3 
 #
-#V:2.0  alpha_debug_mode  18 DICEMBRE 2021                                                        
+#V:2.1  alpha_debug_mode  15 FEBBRAIO 2022                                                        
 #
 # dipendenze: curl,jq,cat,wget
 #
@@ -71,6 +71,6 @@ wget -d -c -U "$ag" "$Lpodcast" -O gr3_"$Data"_"$Ora".mp3
 
 # encode audio data... small file
 
-#ffmpeg -i gr3_"$Data"_"$Ora".mp3 -vn -acodec aac -ab 80k gr3_"$Data"_"$Ora".m4a
-ffmpeg -i gr3_"$Data"_"$Ora".mp3 -acodec libopus -b:a 64k gr3_"$Data"_"$Ora".opus
+#ffmpeg -i gr3_"$Data"_"$Ora".mp3 -vn -acodec aac -ab 70k -ac 1 gr3_"$Data"_"$Ora".m4a
+ffmpeg -i gr3_"$Data"_"$Ora".mp3 -acodec libopus -b:a 48k -ac 1 gr3_"$Data"_"$Ora".opus
 rm gr3_"$Data"_"$Ora".mp3
