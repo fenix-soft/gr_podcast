@@ -40,16 +40,25 @@ Negli script del GRR regionale il bit rate in mp3 varia da 96 a 128 kbps quindi 
 
 I podcast principali gr1,2,3 sono ora dei file mp3 stereo con campionamentoa 48KHz e bitrate 320Kbps (in qualche caso sporadico sono a 256Kbps) quindi i file del podcast sono ancora più grandi basti pensare che 10 minuti di podcast sono circa 25MB, l'edizione da circa 22 minuti del gr1 della mattina adesso pesa circa 50-55MB a puntata. Alcune volte tocca anche la soglia dei 60MB.. potete ben capire su connessione mobile quanta banda dati fa sprecare.. Manco fosse un podcast per veri audiofili, per avere tutta questa qualità.
 
-Ovviamete lo script (di defoult v1.0 e v2.0) ricodifica in opus, audio stereo a circa 63kbps vbr mode (bitrate medio di circa 72kbps) con file di circa 10-13 MB.
+Ovviamete lo script (di defoult v1.0 e v2.0) ricodifica in opus, audio stereo a circa 64kbps vbr mode (bitrate medio di circa 72kbps) con file di circa 10-13 MB.
 
 Per chi volesse, adesso  che, il bit-rate sorgente non manca, potrebbe impostare gli script con delle codifiche ancora più incisive per ridurre ancora di più il peso dei file senza rinunciare la qualità audio. Una tecnica semplice è quella di rinunciare all' audio stereofonico per avere delle codifiche ancore più spinte (bitrate più contenuti) ove l'algoritmo di compressione lo supporti. Per questo motivo ho inserito nello script in maniera commentata (#) i comandi ffmpeg per fare ciò, basta attivare quello desiderato, e commentare quello di default.
-Li trovate nelle ultime righe dello script.
+Li trovate nelle ultime righe dello script se presenti.
 
 ## Tipi di codifica opzionali:
 
 Come accennato prima è possibile utilizzare dei formati di codifica opzionali rispetto a quello di default, vediamoli nel dettaglio:
 
 NB: negli esempi **grX** può essere (gr1,gr2,gr_ecc)
+
+### opus 
+per chi volesse risparmiare ancora più banda di sincronizzazione e avere file ancora più piccoli può usare opus in mono canale con bitrate compresi tra 32-56 Kbps, un buon compromesso tra qualità e dimensione è tra 40-48 Kbps quest'ultima configurazione sarà attivata di defoult negli script che presentano una nomeclatura >= V2.1.1
+
+```
+
+ffmpeg -n -i grX_"$Data"_"$Ora".mp3 -vn -acodec libopus -ab 48k -ac 1 grX_"$Data"_"$Ora".ogg
+
+```
 
 ### ogg (Vorbis)
 
