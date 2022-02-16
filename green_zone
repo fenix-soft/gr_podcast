@@ -1,0 +1,82 @@
+#!/bin/bash
+#
+#
+####################################################################################
+# script che recupera l'ultimo podcast di https://www.raiplaysound.it/programmi/greenzone  
+#
+# V:2.0  alpha_debug_mode  18 DICEMBRE 2021                                                        
+#
+# dipendenze: curl,jq,cat,wget
+# uso: lanciare ./green_zone oppure green_zone
+# log: modifiche per cambio api e dominio rai
+####################################################################################
+
+# set global variable
+
+greenzoneapi="https://www.raiplaysound.it/programmi/greenzone.json"
+grbase="https://www.raiplaysound.it"
+ag="Mozilla/5.0 (Windows NT 10.0; WOW64; rv:40.0) Gecko/20100101 Firefox/56.0"
+
+
+# remove old jason data
+rm ./data/greenzone.json
+#rm ./data/Lgreenzone.json
+
+
+# get  jason data
+curl -A "$ag"  "$greenzoneapi" -o data/greenzone.json
+echo " "
+echo " "
+echo "get data api... done!"
+echo " "
+
+
+# extract jason data of the last podcast
+
+dataT=`cat ./data/greenzone.json | jq -r '."block" | ."cards" | .[0] | ."downloadable_audio" | ."title"'`
+
+echo " "
+echo "extract data... find.."
+echo " "
+echo " "
+echo podcast_title: $dataT
+echo " "
+
+
+
+Lpodcast=`cat ./data/greenzone.json | jq -r '."block" | ."cards" | .[0] | ."downloadable_audio" | ."url"'`
+
+echo " "
+echo podcast_url: $Lpodcast
+echo " "
+
+
+# extract time and date  onair podcast 
+
+ora=`cat ./data/greenzone.json | jq -r '."block" | ."cards" | .[0] | ."create_time"'`
+Ora=`echo $ora | sed -e 's/\ /\n/g' | grep ":"| sed -e 's/\:/\_/g'`
+
+data=`cat ./data/greenzone.json | jq -r '."block" | ."cards" | .[0] | ."create_date"'`
+Data=`echo $data | sed -e 's/\//\-/g'`
+
+echo " "
+echo log_podcast_creation: $Data $Ora
+echo " "
+echo " "
+
+# download podcast
+echo " download podcast.. opus_encode.."
+echo " "
+wget -d -c -U "$ag" "$Lpodcast" -O greenzone_"$Data"_"$Ora".mp3
+
+# encode audio data... small file
+
+
+#ffmpeg -n -i greenzone_"$Data"_"$Ora".mp3 -acodec libopus -b:a 56k -ac 1 greenzone_"$Data"_"$Ora".opus
+
+
+ffmpeg -n -i greenzone_"$Data"_"$Ora".mp3 -vn -acodec libvorbis -aq 2 -ac 1 greenzone_"$Data"_"$Ora".ogg
+
+
+
+rm greenzone_"$Data"_"$Ora".mp3
