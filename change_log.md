@@ -1,8 +1,13 @@
+# V2.2 beta
+- add new script (inviatospeciale, italiasottoinchiesta, R3_primapagina)
+- add new script (green_zone, R3_scienza)
+- the use the new script is the same of gr1,2,3 script
+
 # V2.1.1 alpha debug-mode
 - change encoder setting in gr1,2,3 script (now small file but increse encoder time) [see note.md](note.md)
 
 # V2.1 alpha debug-mode
-- add new script "raipodcast-dl" 
+- add new script "raipodcast-dl" for use [see note.md](note.md)
 - fix alpha sperimental new grr sardegna script
 
 # V2.0 alpha debug-mode
