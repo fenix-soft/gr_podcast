@@ -122,8 +122,29 @@ Costruire un phaser in bash per recuperare il jason dall'html e riformattarlo no
 
 NB: alcune funzioni dell' api legacy continuano a funzionare.. (fino a quando?) la parte essenziale dei relinker da errore 404. 
 
-Quindi momentaneamente gli script regionali sono momentaneamente in sospeso di manutenzione, finchè non trovo qualcosa di fattibile.
+Quindi  gli script regionali sono momentaneamente in sospeso di manutenzione, finchè non trovo qualcosa di fattibile.
 
 ### 12 Febbraio 2022
 
 fix sperimentale errore 404 dell' api legacy, in fase di test nello script grr sardegna, in caso di stabilità, esporto a tempo debito ad altre grr regionali
+
+### Note sulla versione: V2.1 alpha
+
+in questa versione è stato aggiunto lo script **raipodcast-dl** che è uno script generico che serve a scaricare il singolo episodio di un podcast dandoli in pasto (input) il link della pagina html del singolo episodio, funziona bene con gli audio-book di "ad alta voce" sia con le normali puntate di tutti gli altri podcast, utilizza l' api level 2, in caso di bisogno tenta di utilizzare in automatico l'api legacy, per i vecchi podcast, è ancora in fase alpha, quindi non è esente da bug o possibili malfunzionamenti.
+
+```
+use: raipodcast-dl [link episode]
+```
+
+per fare un esempio pratico del suo uso uso ipotizziamo che voglia scaricare la "rassegna stampa del 16 febbraio 2022", mi reco con il browser allindirizzo: https://www.raiplaysound.it/programmi/radio3mondo e cerco il link di quel episodio, che nel mio caso è
+https://www.raiplaysound.it/audio/2022/02/Radio3-Mondo-del-16022022-3347dde9-bba2-403a-9a90-eb6a2b2ffe99.html
+
+per usare lo script do un:
+
+```
+
+raipodcast-dl "https://www.raiplaysound.it/audio/2022/02/Radio3-Mondo-del-16022022-3347dde9-bba2-403a-9a90-eb6a2b2ffe99.html"
+
+
+```
+
